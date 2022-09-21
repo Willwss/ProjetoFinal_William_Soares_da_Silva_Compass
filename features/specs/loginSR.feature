@@ -5,13 +5,13 @@ Funcionalidade: Login
    Dado que esteja na página de login
   
   Cenario: Sucesso no login
-    Quando realizar o login com "jsjsjsjs4@hotmail.com" e "1234567890"
+    Quando realizar o login com "testenome12@hotmail.com" e "1234567890"
     Então deve exibir "Serverest Store" na área logada
-    E informar no campo de pesquisa 'Samsung' e clicar em pesquisar
-
-  #Cenario: Pesquisa Item ao logar
-    #Quando exibir "Serverest Store"
-    #Então informar no campo de pesquisa 'Samsung' e clicar em pesquisar
+    
+  Cenário: Pesquisar por produto
+    Quando estiver logado
+    E realizar uma busca na barra de pesquisa da home
+    Então deverá exibir o item informado
 
   Esquema do Cenario: Falha no login
     Quando realizar o login com <email> e <senha>

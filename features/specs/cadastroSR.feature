@@ -6,13 +6,15 @@ Funcionalidade: Cadastro
   
   Cenario: Sucesso no Cadastro
     Dado que esteja na página de cadastro
-    Quando realizar o cadastro com "testenome1", "testenome1@hotmail.com" e "1234567890"
+    Quando realizar o cadastro com "testenome000", "testenome000@hotmail.com" e "1234567890"
     Então deve exibir "Serverest Store" quando tiver sucesso no cadastro
-    E informar no campo de pesquisa 'Samsung' e clicar em pesquisar
 
-  #Cenario: Pesquisa Item ao cadastrar
-    #Quando exibir "Serverest Store"
-    #Então informar no campo de pesquisa 'Samsung' e clicar em pesquisar
+########BUSCAR ITEM AO CADASTRAR COMO NOVO USUÁRIO################
+  Cenário: Pesquisar por produto
+    Quando estiver cadastrado
+    E realizar uma busca na barra de pesquisa da home
+    Então deverá exibir o item informado
+###################################################################
 
   Esquema do Cenario: Falha no Cadastro
     Dado que esteja na página de cadastro
