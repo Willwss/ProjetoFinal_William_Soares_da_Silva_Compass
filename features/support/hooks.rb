@@ -2,10 +2,6 @@ Before do
     @app = App.new
   end
 
-
-
-  #NOVA FEATURE ADCIONADA
-
   After do |scenario|
 
      #if scenario.failed?
