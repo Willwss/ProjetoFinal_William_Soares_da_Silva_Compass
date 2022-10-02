@@ -1,0 +1,7 @@
+default: -p prd -p chrome -p html
+
+prd: ENVIRONMENT="prd"
+
+chrome: BROWSER="chrome"
+
+html: --format html --out=reports/report.html
