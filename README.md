@@ -2,7 +2,7 @@
 https://github.com/Willwss
 
 #### Automação do site https://front.serverest.dev/login
-Projeto que automatiza a parte de login/login com pesquisa e cadastro realizando acesso a home vendo os produtos disponiveis
+Projeto que automatiza a parte de login/login com pesquisa, cadastro realizando acesso a home e gerando reports de possiveis erros capturados.
 
 ### Instalação das gems necessárias para realizar os testes###
 source 'https://rubygems.org'
