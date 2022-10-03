@@ -1,17 +1,20 @@
 class Home < SitePrism::Page
   set_url 'home'
   
+  element :search, "input[data-testid='pesquisar']"
+  element :button, "button[data-testid='botaoPesquisar']"
   element :message, '/html/body/div/div/div/h1' #titulo serverest
-  element :search, '//*[@id="root"]/div/div/div[1]/div/div[2]/input'
-  element :button, '#root > div > div > div.col-12 > div > div:nth-child(3) > button'
 
-  def logged_user
+  
+  def usuario_logado
     message.text  
   end
 
-  def search_item(item)
-    search.set item
-    click_button '#root > div > div > div.col-12 > div > div:nth-child(3) > button'
+  def search_item(termo)
+    search.click
+    search.set termo
+    button.click
   end
-  
+
+
 end

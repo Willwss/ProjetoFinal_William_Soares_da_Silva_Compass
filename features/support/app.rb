@@ -12,8 +12,4 @@ class App
       Cadastro.new
     end
 
-    def listaDeCompras
-      ListaDeCompras.new
-    end
-
   end
