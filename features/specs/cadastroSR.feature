@@ -1,22 +1,15 @@
 #language: pt
 Funcionalidade: Cadastro
     
-  #Contexto:Na tela de Cadastro
-   
-  
+  Contexto: que esteja na página de cadastro
+      Dado que esteja na página de cadastro 
+
   Cenario: Sucesso no Cadastro
-    Dado que esteja na página de cadastro
-    Quando realizar o cadastro com "testenome000", "testenome000@hotmail.com" e "1234567890"
+    Quando realizar o cadastro faker
     Então deve exibir "Serverest Store" quando tiver sucesso no cadastro
 
-  Cenário: Pesquisar por produto
-    Quando estiver cadastrado
-    E realizar uma busca na barra de pesquisa da home
-    Então deverá exibir o item informado
-
-
-  Esquema do Cenario: Falha no Cadastro
-    Dado que esteja na página de cadastro
+  
+   Cenario: Falha no Cadastro
     Quando realizar o cadastro com <nome>, <email> e <senha>
     Então devo ver a mensagem de alerta <texto>
 
@@ -28,3 +21,14 @@ Funcionalidade: Cadastro
       |"semnome"| "novoemailteste@gmail.com"      | ""                  | "Password não pode ficar em branco"      | 
       |"cad"    | ""                              | "1234567890"        | "Email é obrigatório"                    |
       |""       | "emailparacadastro@hotmail.com" | "senha incorreta"   | "Nome é obrigatório"                     |
+
+
+  Cenario: Cadastro Fixo
+    Quando realizar o cadastro com "testenome000", "testenome000@hotmail.com" e "1234567890"
+    Então deve exibir "Serverest Store" quando tiver sucesso no cadastro
+  
+  
+  Cenário: Pesquisar por produto
+    Quando estiver cadastrado
+    E realizar uma busca na barra de pesquisa da home
+    Então deverá exibir o item informado
