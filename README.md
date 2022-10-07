@@ -8,11 +8,17 @@ Projeto que automatiza a parte de login/login com pesquisa, cadastro realizando 
 source 'https://rubygems.org'
 
 gem 'cucumber'
+
 gem 'capybara'
+
 gem 'selenium-webdriver'
+
 gem 'rspec'
+
 gem 'site_prism'
+
 gem 'faker'
+
 gem 'pry'
 
 ### Técnologias utilizadas
