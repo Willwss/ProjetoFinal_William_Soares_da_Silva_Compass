@@ -9,7 +9,6 @@ class Home < SitePrism::Page
     message.text  
   end
 
-  
   def search_item(termo)
     search.click
     search.set termo
