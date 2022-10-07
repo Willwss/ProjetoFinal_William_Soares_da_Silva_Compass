@@ -42,8 +42,9 @@ Abra o CMDER com a pasta do projeto e digite:
 
     bundle exec cucumber -p default (Esse comando inicia a sequencia de testes)
 
-### Automações realizadas até o momento ###
+### Automações realizadas ###
     Cadastro de novo usuário usando faker
+    
     Login sem pesquisa e Login com pesquisa de produto
 
 ### Ambientes testados ###
