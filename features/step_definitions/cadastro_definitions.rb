@@ -5,7 +5,6 @@ end
 Quando('realizar o cadastro faker') do
   new_faker = Factory::Dynamic.register_fake
   @app.cadastro.cadastro_faker(new_faker)
-  # @app.cadastro.cadastro(nome, email, password)
 end
 
 Então ('deve exibir {string} quando tiver sucesso no cadastro') do |texto|

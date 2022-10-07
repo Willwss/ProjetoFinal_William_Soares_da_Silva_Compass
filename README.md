@@ -12,6 +12,8 @@ gem 'capybara'
 gem 'selenium-webdriver'
 gem 'rspec'
 gem 'site_prism'
+gem 'faker'
+gem 'pry'
 
 ### Técnologias utilizadas
 http://rubyinstaller.org/downloads/
@@ -36,16 +38,29 @@ https://rubydoc.info/github/teamcapybara/capybara/master/Capybara/Node/Actions
 
 ### Comando para instalação das gemas ###
 Abra o CMDER com a pasta do projeto e digite:
-    bundle install
+    bundle install (Esse comando instala as gems do projeto para realização dos testes)
+
+    bundle exec cucumber -p default (Esse comando inicia a sequencia de testes)
 
 ### Automações realizadas até o momento ###
-    Cadastro de novo usuário
-    Login e Login com pesquisa de produto
+    Cadastro de novo usuário usando faker
+    Login sem pesquisa e Login com pesquisa de produto
 
 ### Ambientes testados ###
     Windows 11 x64
 
 ### Versão do browser: ###
     Chrome - 105.0.5195.127 (Versão oficial) 64 bits
+    
+    
+### Agradecimentos ###
+
+Christian Oliveira da Silva(https://github.com/chrisOsilva)
+
+Bruno Guimaraes dos Santos (https://github.com/brunosantos007)
+
+Emerson Henrique Barcelos Pereira(https://github.com/EmersonBarcelos)
+
+Wellingnton Vargas Bernardes(https://github.com/Wbernard98)
 
 
